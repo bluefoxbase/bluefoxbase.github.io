@@ -1,0 +1,182 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #040435;
+  text-align: center;
+  color: white;
+  font-family: "Russo One", sans-serif;
+}
+
+
+
+svg {
+  overflow: visible;
+}
+
+h1 {
+  display: block;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 70px;
+  font-weight: 200;
+}
+
+.h1 {
+  display: block;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.navbar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  border-style: solid;
+  margin-bottom: 5%;
+  background-color: rgba(38, 7, 68, 0);
+  border-radius: 25px;
+  border-width: 5px;
+  border-color: rgb(0, 153, 255);
+}
+
+.navbar2 {
+  color: rgb(0, 153, 255);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 0%;
+  background-color: rgba(38, 7, 68, 0);
+  border-radius: 25px;
+  border-width: 2px;
+  margin-top: 2%;
+}
+
+p {
+  border-style: dashed;
+  font-size: 22px;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  font-family: "Russo One", sans-serif;
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
+  color: white;
+  font-size: 45px;
+  border-radius: 14px;
+  margin-left: 1%;
+  border-width: 5px;
+}
+
+button:hover {
+  font-family: "Russo One", sans-serif;
+  background-color: white;
+  border-color: rgb(0, 153, 255);
+  border-style: solid;
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.installsteps{
+  font-size: 25px;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    display: block;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 40px;
+    font-weight: 200;
+  }
+
+  .h1 {
+    display: block;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 50px;
+    font-weight: 200;
+  }
+
+  .navbar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border-style: solid;
+    margin-bottom: 5%;
+    background-color: rgba(38, 7, 68, 0);
+    border-radius: 25px;
+    border-width: 2px;
+  }
+
+  .navbar2 {
+    color: rgb(0, 153, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 0%;
+    background-color: rgba(38, 7, 68, 0);
+    border-radius: 25px;
+    border-width: 2px;
+    margin-top: 2%;
+  }
+
+  p {
+    border-style: dashed;
+    font-size: px;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    font-family: "Russo One", sans-serif;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-size: 20px;
+    border-radius: 14px;
+    margin-left: 5px;
+  }
+
+  button:hover {
+    font-family: "Russo One", sans-serif;
+    background-color: white;
+    border-color: white;
+    border-style: solid;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .buttons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+}
