@@ -19,7 +19,7 @@
       <font style="color: #001275;">BLUE</font> FOX
     </h1>
   </div>
-  <script src="bundle.js"></script>
+  <script src="glitch.js"></script>
   <p>
     Welcome to Blue Fox a brand new Meme on Base Chain! The fox is adopted from the open source code from the original
     wallet and only changed to match blue colours for base chain. </p>
@@ -33,14 +33,27 @@
   </div>
 
   <div class=" navbar2">
-    <h1 style="color: #001275;" class="hx">Tokenomics</h1>
+    <h1 style="color: #001275;" class="hx">Tokenomics </h1>
   </div>
-  <p>1,000,000,000 Total Supply <br>
-    Contract Revoked Ownership <br>
-    LP Locked <br>
-    Final Tax 0/0 <br>
-    CA: SOON
+  <p class="tnm">🫘 1,000,000,000 Total Supply 🫘<br>
+    🚫 Ownership Renounced 🚫<br>
+    ⛽ Final Tax 0/0 ⛽<br>
+    🔐 LP Locked 🔐<br>
+    🫂 Team 3% 🫂
   </p>
+  <div class="cadiv">
+    CA: 0x000000000000000000000000000000000000000
+    <button onclick="copyCA()" class="buttonca">Copy</button>
+  </div>
+
+  <script>
+    function copyCA() {
+      //document.getElementById("demo").innerHTML = "Hello World";
+      navigator.clipboard.writeText("0x000000000000000000000000000000000000000");
+    }
+
+  </script>
+
   <script src="../particles.js"></script>
   <script>/* ---- particles.js config ---- */
 

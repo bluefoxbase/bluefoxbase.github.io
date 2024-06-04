@@ -1,9 +1,24 @@
+@keyframes fadeInAnimation {
+  0% {
+    filter: blur(100px);
+    opacity: 0;
+  }
+
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 html,
 body {
+  animation: fadeInAnimation ease 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 body {
-  background-image: linear-gradient(to right top, #040435, #0d255d, #194388, #1d65b6, #1089e5);  
+  background-image: linear-gradient(to right top, #040435, #0d255d, #194388, #1d65b6, #1089e5);
   text-align: center;
   background-repeat: repeat;
   color: white;
@@ -24,7 +39,8 @@ h1 {
   font-size: 70px;
   font-weight: 200;
   background-color: #0bd6dd75;
-  border-radius: 25px;
+  border-radius: 22px;
+
 }
 
 .h1 {
@@ -68,13 +84,13 @@ h1 {
   background-color: rgba(38, 7, 68, 0);
   border-radius: 25px;
   border-width: 4px;
-  margin-top: 2%;
+  margin-top: 5%;
   border-color: white;
   border-style: solid;
 }
 
 p {
-  border-style:dotted;
+  border-style: dotted;
   border-radius: 15px;
   border-width: 4px;
   font-size: 22px;
@@ -84,6 +100,7 @@ p {
   margin-right: auto;
   background-color: #00000075;
   border-color: aquamarine;
+  padding: 8px;
 }
 
 /* .p2{
@@ -99,7 +116,7 @@ button {
   font-size: 44px;
   border-radius: 14px;
   margin-left: 1%;
-  border-width: 5px;
+  border-width: 4px;
 }
 
 button:hover {
@@ -118,19 +135,51 @@ button:hover {
   margin-right: auto;
 
 }
-.installsteps{
+
+.installsteps {
   font-size: 25px;
 }
-#particles-js{
+
+#particles-js {
   z-index: -1;
   position: absolute;
   width: 100%;
-  height: 120%;
+  height: 100%;
 }
+
+/* .tnm{
+  font-size: px;
+} */
+
+.contract {
+  margin-left: 0%;
+  font-size: 25px;
+  background-color: transparent;
+  border-style: none;
+}
+
+.cadiv {
+  border-style: dotted;
+  background-color: #00000075;
+  border-color: aquamarine;
+  font-size: 22px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: dotted;
+  border-radius: 14px;
+}
+
+.buttonca {
+  font-size: 30px;
+}
+
 @media only screen and (max-width: 600px) {
   #mob {
     display: none;
   }
+
   h1 {
     display: block;
     margin-top: 0%;
@@ -146,14 +195,17 @@ button:hover {
     font-size: 50px;
     font-weight: 200;
   }
+
   .hx {
     display: block;
     margin-top: 0%;
     margin-bottom: 0%;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 200;
     border-color: white;
+    border-radius: 20px;
   }
+
   .navbar {
     display: block;
     margin-left: auto;
@@ -174,21 +226,24 @@ button:hover {
     width: 90%;
     margin-bottom: 0%;
     background-color: rgba(38, 7, 68, 0);
-    border-radius: 20px;
-    border-width: 2px;
-    margin-top: 2%;
-    font-size: 20px;
+    border-radius: 22px;
+    border-width: 3px;
+    margin-top: 10%;
+    font-size: 17px;
     margin-bottom: 2%;
   }
 
   p {
     margin-top: 0%;
     border-style: dashed;
-    font-size: 17px;
+    font-size: 15px;
     display: block;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 5px;
   }
 
   button {
@@ -197,18 +252,18 @@ button:hover {
     color: rgb(255, 255, 255);
     font-family: "Russo One", sans-serif;
     border-style: solid;
-    font-size: 32px;
+    font-size: 28px;
     border-radius: 14px;
     margin-left: 5px;
+    border-width: 3px;
   }
 
   button:hover {
     font-family: "Russo One", sans-serif;
     background-color: white;
-    border-color: white;
+    border-color: rgb(0, 153, 255);
     border-style: solid;
     color: rgb(0, 0, 0);
-    font-size: 20px;
     border-radius: 14px;
     cursor: pointer;
   }
@@ -219,12 +274,35 @@ button:hover {
     margin-right: auto;
 
   }
-  #particles-js{
+
+  #particles-js {
     z-index: -1;
     position: absolute;
     width: 100%;
     height: fit-content;
   }
 
-}
+  .contract {
+    margin-left: 0%;
+    font-size: 15px;
+    background-color: transparent;
+    border-style: none;
+  }
 
+  .cadiv {
+    border-style: dotted;
+    background-color: #00000075;
+    border-color: aquamarine;
+    font-size: 11px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-style: dotted;
+    border-radius: 14px;
+  }
+
+  .buttonca {
+    font-size: 15px;
+  }
+}
