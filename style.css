@@ -1,11 +1,11 @@
 html,
 body {
-  height: 100%;
 }
 
 body {
-  background: #040435;
+  background-image: linear-gradient(to right top, #040435, #0d255d, #194388, #1d65b6, #1089e5);  
   text-align: center;
+  background-repeat: repeat;
   color: white;
   font-family: "Russo One", sans-serif;
 }
@@ -13,6 +13,7 @@ body {
 
 
 svg {
+  z-index: 1000;
   overflow: visible;
 }
 
@@ -22,6 +23,8 @@ h1 {
   margin-bottom: 0%;
   font-size: 70px;
   font-weight: 200;
+  background-color: #0bd6dd75;
+  border-radius: 25px;
 }
 
 .h1 {
@@ -30,23 +33,33 @@ h1 {
   margin-bottom: 0%;
   font-size: 50px;
   font-weight: 200;
+  border-color: white;
+}
+
+
+.hx {
+  display: block;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 50px;
+  font-weight: 200;
+  border-color: white;
 }
 
 .navbar {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 35%;
+  width: 50%;
   border-style: solid;
   margin-bottom: 5%;
   background-color: rgba(38, 7, 68, 0);
   border-radius: 25px;
   border-width: 5px;
-  border-color: rgb(0, 153, 255);
+  border-color: rgb(255, 255, 255);
 }
 
 .navbar2 {
-  color: rgb(0, 153, 255);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -54,26 +67,36 @@ h1 {
   margin-bottom: 0%;
   background-color: rgba(38, 7, 68, 0);
   border-radius: 25px;
-  border-width: 2px;
+  border-width: 4px;
   margin-top: 2%;
+  border-color: white;
+  border-style: solid;
 }
 
 p {
-  border-style: dashed;
+  border-style:dotted;
+  border-radius: 15px;
+  border-width: 4px;
   font-size: 22px;
   display: block;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  background-color: #00000075;
+  border-color: aquamarine;
 }
+
+/* .p2{
+  //border-color: rgb(255, 0, 0);
+} */
 
 button {
   font-family: "Russo One", sans-serif;
-  background-color: transparent;
-  border-color: white;
+  background-color: rgba(0, 0, 0, 0.747);
+  border-color: rgb(248, 253, 168);
   border-style: solid;
-  color: white;
-  font-size: 45px;
+  color: rgb(255, 255, 255);
+  font-size: 44px;
   border-radius: 14px;
   margin-left: 1%;
   border-width: 5px;
@@ -85,7 +108,6 @@ button:hover {
   border-color: rgb(0, 153, 255);
   border-style: solid;
   color: rgb(0, 0, 0);
-  font-size: 45px;
   border-radius: 14px;
   cursor: pointer;
 }
@@ -99,12 +121,21 @@ button:hover {
 .installsteps{
   font-size: 25px;
 }
+#particles-js{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+}
 @media only screen and (max-width: 600px) {
+  #mob {
+    display: none;
+  }
   h1 {
     display: block;
     margin-top: 0%;
     margin-bottom: 0%;
-    font-size: 40px;
+    font-size: 47px;
     font-weight: 200;
   }
 
@@ -115,12 +146,19 @@ button:hover {
     font-size: 50px;
     font-weight: 200;
   }
-
+  .hx {
+    display: block;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 35px;
+    font-weight: 200;
+    border-color: white;
+  }
   .navbar {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
+    width: 90%;
     border-style: solid;
     margin-bottom: 5%;
     background-color: rgba(38, 7, 68, 0);
@@ -133,30 +171,33 @@ button:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
     margin-bottom: 0%;
     background-color: rgba(38, 7, 68, 0);
-    border-radius: 25px;
+    border-radius: 20px;
     border-width: 2px;
     margin-top: 2%;
+    font-size: 20px;
+    margin-bottom: 2%;
   }
 
   p {
+    margin-top: 0%;
     border-style: dashed;
-    font-size: px;
+    font-size: 17px;
     display: block;
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
 
   button {
+    background-color: rgba(0, 0, 0, 0.747);
+    border-color: rgb(248, 253, 168);
+    color: rgb(255, 255, 255);
     font-family: "Russo One", sans-serif;
-    background-color: transparent;
-    border-color: white;
     border-style: solid;
-    color: white;
-    font-size: 20px;
+    font-size: 32px;
     border-radius: 14px;
     margin-left: 5px;
   }
@@ -178,5 +219,12 @@ button:hover {
     margin-right: auto;
 
   }
+  #particles-js{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+  }
 
 }
+
