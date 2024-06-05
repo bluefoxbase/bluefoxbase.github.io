@@ -12,8 +12,8 @@
     createDistortedLogo({
       width: 0.4,
       height: 0.4,
-      followMouse: false,
-      followMotion: false,
+      followMouse: true,
+      followMotion: true,
       lazyRender: false,
     });
     
